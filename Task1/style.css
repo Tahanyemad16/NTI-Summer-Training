@@ -1,0 +1,13 @@
+h2{
+    color: green;
+    background-color: cyan;
+}
+p span{
+    color: lightseagreen;
+}
+.light{
+    color: darkcyan;
+}
+.dark{
+    color: darkblue;
+}
