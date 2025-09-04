@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 30px auto;
+  width: 90%;
+  font-size: 0; 
+}
+
+.box {
+  display: inline-block;
+  width: 25%;   
+  font-size: 16px;
+  text-align: center;
+  vertical-align: top; 
+  padding: 10px;
+}
+
+.box img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.box p {
+  font-weight: lighter;
+  font-size: 14px;
+  color: rgb(40, 41, 65);
+  margin: 10px 0;
+}

@@ -1,0 +1,1045 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- first page -->
+  <nav class="container-fluid d-flex border-bottom justify-content-between">
+    <div class="d-flex gap-3">
+      <div class="dropdown">
+        <button class="btn dropdown-toggle " type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <img src="images/english.png" alt="user icon" width="18" height="24">
+          English
+        </button>
+        <ul class="dropdown-menu position-absolute">
+          <li><a class="dropdown-item" href="#"><img src="images/espanol.png" alt="user icon" width="18" height="23">
+              Español</a></li>
+          <li><a class="dropdown-item" href="#"><img src="images/portugues.png" alt="user icon" width="18" height="23">
+              Portugues</a></li>
+          <li><a class="dropdown-item" href="#"><img src="images/francais.png" alt="user icon" width="18" height="23">
+              Francais</a></li>
+        </ul>
+      </div>
+
+      <div class="dropdown border-end">
+        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          USD
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">EUR</a></li>
+          <li><a class="dropdown-item" href="#">BRL</a></li>
+        </ul>
+      </div>
+
+      <div class="d-flex gap-5 align-items-center pt-2">
+        <p>Track Order</p>
+        <p>Contact</p>
+        <p>FAQs</p>
+      </div>
+    </div>
+
+    <div class="d-flex gap-4 align-items-center">
+      <div class="d-flex gap-2 border-end">
+        <a href="#"><i class="fa-brands fa-facebook-f text-secondary"></i></a>
+        <a href="#"></a><i class="fa-brands fa-tiktok text-secondary"></i></a>
+        <a href="#"></a><i class="fa-brands fa-youtube text-secondary"></i></a>
+        <a href="#"></a><i class="fa-brands fa-instagram text-secondary"></i></a>
+        <a href="#"></a><i class="fa-brands fa-x-twitter text-secondary me-3"></i></a>
+      </div>
+      <div class="ic">
+        <p class="mt-2">Contact us 24/7 (+92) 3942 7879</p>
+      </div>
+    </div>
+  </nav>
+  <nav class="navbar navbar-expand-lg sticky-top bg-white shadow-sm">
+    <div class="container-fluid d-flex justify-content-around">
+      <a class="navbar-brand" href="#"><img src="images/logo-furniture.png" alt="user icon" class="w-50"></span></a>
+
+      <div class="w-50">
+        <form>
+          <div class="input-group search-container">
+            <div class="dropdown input-group-text">
+              <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Categories
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Laptop</a></li>
+                <li><a class="dropdown-item" href="#">Sleeves</a></li>
+                <li><a class="dropdown-item" href="#">Phones</a></li>
+                <li><a class="dropdown-item" href="#">Taps</a></li>
+                <li><a class="dropdown-item" href="#">IPads</a></li>
+                <li><a class="dropdown-item" href="#">Shoes</a></li>
+                <li><a class="dropdown-item" href="#">Books</a></li>
+                <li><a class="dropdown-item" href="#">Accessories</a></li>
+              </ul>
+            </div>
+            <input id="searchInput" type="text" class="form-control bg-light" placeholder="Search For Product"
+              aria-label="Search" />
+            <span class="input-group-text bg-danger text-white"><i class="fa-solid fa-magnifying-glass"></i></span>
+
+            <div id="searchSuggestions" class="search-suggestions">
+              <strong class="d-block mb-2">Popular search</strong>
+              <div class="d-flex flex-wrap">
+                <span class="search-tag active">smartphone</span>
+                <span class="search-tag">tablet</span>
+                <span class="search-tag">controller</span>
+                <span class="search-tag">furniture</span>
+                <span class="search-tag">laptop</span>
+                <span class="search-tag">playstation</span>
+                <span class="search-tag">womens fashion</span>
+                <span class="search-tag">home & decor</span>
+                <span class="search-tag">camera</span>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="d-flex align-items-center gap-5" id="navbarSupportedContent">
+        <div class="position-relative">
+          <i class="fa-regular fa-user fa-1x"></i>
+          <span class="ms-1">Account</span>
+        </div>
+
+        <div class="position-relative">
+          <i class="fa-regular fa-heart fa-1x"></i>
+          <span
+            class="badge rounded-circle bg-danger text-white position-absolute top-0 start-100 translate-middle p-1 px-2"
+            style="font-size: 10px;">0</span>
+        </div>
+
+        <div class="position-relative">
+          <i class="fa-solid fa-cart-shopping fa-1x"></i>
+          <span
+            class="badge rounded-circle bg-danger text-white position-absolute top-0 start-100 translate-middle p-1 px-2"
+            style="font-size: 10px;">0</span>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="d-flex align-items-start border-bottom mx-5 py-2">
+    <div class="categories position-absolute p-2" style="width: 300px;">
+      <div class="card shadow-sm rounded-0">
+        <button class="btn btn-danger text-white w-100 text-start">
+          <i class="fa-solid fa-bars fs-4"></i> SHOP BY CATEGORIES
+        </button>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item fs-4"><i class="fa-solid fa-door-open"></i> Living Room</li>
+          <li class="list-group-item fs-4"><i class="fa-solid fa-bed"></i> Bedroom</li>
+          <li class="list-group-item fs-4"><i class="fa-solid fa-utensils"></i> Dining Room</li>
+          <li class="list-group-item fs-4"><i class="fa-solid fa-bath"></i> Bathroom</li>
+          <li class="list-group-item fs-4"><i class="fa-solid fa-kitchen-set"></i> Kitchen Room</li>
+          <li class="list-group-item fs-4"><i class="fa-solid fa-briefcase"></i> Home Office</li>
+          <li class="list-group-item fs-4"><i class="fa-solid fa-bed"></i> Home Decoration</li>
+          <li class="list-group-item fs-4"><i class="fa-solid fa-tree"></i> Outdoor</li>
+          <li class="list-group-item fs-4"><i class="fa-solid fa-percent"></i> Sale Off</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="flex-grow-1 d-flex justify-content-between px-5 mx-5">
+      <div class="d-flex gap-3 ms-5">
+        <div class="dropdown"></div>
+        <div class="dropdown"></div>
+        <div class="dropdown"></div>
+        <div class="dropdown"></div>
+        <div class="dropdown"></div>
+        <div class="dropdown"></div>
+        <div class="dropdown"></div>
+        <div class="dropdown"></div>
+        <div class="dropdown"></div>
+        <div class="dropdown"></div>
+
+
+        <div class="dropdown justify-content-center">
+          <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Home
+          </button>
+          <div class="dropdown-menu custom-dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <div class="d-flex flex-wrap gap-3 justify-content-start">
+              <div class="card" style="width: 230px;">
+                <img src="images/mega-home-1.jpg" class="card-img-top" alt="Image 1">
+                <div class="card-body">
+                  <h5 class="card-title">Card 1</h5>
+                </div>
+              </div>
+              <div class="card" style="width: 230px;">
+                <img src="images/mega-home-2.jpg" class="card-img-top" alt="Image 2">
+                <div class="card-body">
+                  <h5 class="card-title">Card 2</h5>
+                </div>
+              </div>
+              <div class="card" style="width: 230px;">
+                <img src="images/mega-home-3.jpg" class="card-img-top" alt="Image 3">
+                <div class="card-body">
+                  <h5 class="card-title">Card 3</h5>
+                </div>
+              </div>
+              <div class="card" style="width: 230px;">
+                <img src="images/mega-home-4.jpg" class="card-img-top" alt="Image 4">
+                <div class="card-body">
+                  <h5 class="card-title">Card 4</h5>
+                </div>
+              </div>
+              <div class="mx-auto d-flex justify-content-around">
+                <div class="card mx-1" style="width: 230px;">
+                  <img src="images/mega-home-5.jpg" class="card-img-top" alt="Image 5">
+                  <div class="card-body">
+                    <h5 class="card-title">Card 5</h5>
+                  </div>
+                </div>
+                <div class="card mx-1" style="width: 230px;">
+                  <img src="images/mega-home-6.jpg" class="card-img-top" alt="Image 5">
+                  <div class="card-body">
+                    <h5 class="card-title">Card 6</h5>
+                  </div>
+                </div>
+                <div class="card mx-1" style="width: 230px;">
+                  <img src="images/mega-shop-layout.png" class="card-img-top" alt="Image 5">
+                  <div class="card-body">
+                    <h5 class="card-title">Card 7</h5>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown">Shop</button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">EUR</a></li>
+            <li><a class="dropdown-item" href="#">BRL</a></li>
+          </ul>
+        </div>
+        <div class="dropdown">
+          <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown">Products</button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">EUR</a></li>
+            <li><a class="dropdown-item" href="#">BRL</a></li>
+          </ul>
+        </div>
+        <div class="dropdown justify-content-center">
+          <button class="btn dropdown-toggle" type="button" id="pagesDropdown" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Pages
+          </button>
+          <div class="dropdown-menu custom-dropdown-menu p-4" aria-labelledby="pagesDropdown" style="min-width: 100%;">
+
+            <div class="d-flex flex-wrap gap-4 justify-content-start text-start">
+
+              <div style="min-width: 200px;">
+                <h6 class="fw-bold">HOMEPAGES</h6>
+                <a href="#" class="dropdown-item">Home Supermarket 01</a>
+                <a href="#" class="dropdown-item">Home Supermarket 02</a>
+                <a href="#" class="dropdown-item">Home Furniture</a>
+                <a href="#" class="dropdown-item">Home Electronic</a>
+                <a href="#" class="dropdown-item">Home Autopart</a>
+                <a href="#" class="dropdown-item">Home Cosmetic</a>
+
+                <h6 class="fw-bold mt-3">OTHER PAGES</h6>
+                <a href="#" class="dropdown-item">Blog</a>
+                <a href="#" class="dropdown-item">About us</a>
+                <a href="contactus.html" class="dropdown-item">Contact us</a>
+                <a href="#" class="dropdown-item">Coming soon</a>
+              </div>
+
+              <div style="min-width: 200px;">
+                <h6 class="fw-bold">SUPERMARKET - SHOP</h6>
+                <a href="#" class="dropdown-item">Top Categories - style 1</a>
+                <a href="#" class="dropdown-item">Top Categories - style 2</a>
+                <a href="#" class="dropdown-item">Top Brand</a>
+                <a href="#" class="dropdown-item">Shop - list</a>
+                <a href="#" class="dropdown-item">Shop - scroll</a>
+
+                <h6 class="fw-bold mt-3">FURNITURE - SHOP</h6>
+                <a href="#" class="dropdown-item">Top Categories - style 1</a>
+                <a href="#" class="dropdown-item">Top Categories - style 2</a>
+                <a href="#" class="dropdown-item">Top Brand</a>
+              </div>
+
+              <div style="min-width: 200px;">
+                <h6 class="fw-bold">ELECTRONIC - SHOP</h6>
+                <a href="#" class="dropdown-item">Top Categories - style 1</a>
+                <a href="#" class="dropdown-item">Top Brand</a>
+
+                <h6 class="fw-bold mt-3">AUTOMOTIVE - SHOP</h6>
+                <a href="#" class="dropdown-item">Top Categories - style 1</a>
+                <a href="#" class="dropdown-item">Top Categories - style 2</a>
+                <a href="#" class="dropdown-item">Top Brand</a>
+              </div>
+
+              <div style="min-width: 200px;">
+                <h6 class="fw-bold">COSMETICS - SHOP</h6>
+                <a href="#" class="dropdown-item">Top Categories - style 1</a>
+                <a href="#" class="dropdown-item">Top Categories - style 2</a>
+                <a href="#" class="dropdown-item">Top Brand</a>
+              </div>
+
+              <div style="min-width: 220px;">
+                <h6 class="fw-bold">PRODUCT PAGES</h6>
+                <a href="#" class="dropdown-item">Simple product</a>
+                <a href="#" class="dropdown-item">Variable - Label Attribute</a>
+                <a href="#" class="dropdown-item">Variable - Dropdown Attribute</a>
+                <a href="#" class="dropdown-item">Variable - Color Swatch</a>
+                <a href="#" class="dropdown-item">Variable - Variation Thumbnail</a>
+                <a href="#" class="dropdown-item">Group product</a>
+                <a href="#" class="dropdown-item">External product</a>
+                <a href="#" class="dropdown-item">Vertical thumbnail</a>
+                <a href="#" class="dropdown-item">Horizontal thumbnail</a>
+                <a href="#" class="dropdown-item">Summary Scrolling</a>
+                <a href="#" class="dropdown-item">Flash Sale</a>
+                <a href="#" class="dropdown-item">Video + 360 degree</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="d-flex gap-3 py-2">
+          <a href="#" class="text-dark text-decoration-none">Blog</a>
+          <a href="#" class="text-dark text-decoration-none">About Us</a>
+        </div>
+      </div>
+      <div class="d-flex gap-3">
+        <div class="dropdown">
+          <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown">Recently viewed</button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">English</a></li>
+            <li><a class="dropdown-item" href="#">Arabic</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="carouselExampleIndicators" class="carousel slide position-relative mb-5">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active">
+      </button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button> <button
+        type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active bg-cover"
+        style="background-image: url('images/slide1-demo3.png'); height: 600px; background-size:65% 100%; background-color: rgb(203, 191, 176); background-position: right center; background-repeat: no-repeat;">
+        <div class="carousel-caption text-start">
+          <p class="text-dark fw-bold fs-4">Made in Italy</p>
+          <h1 class="fw-bold text-dark display-4">Best Seller<br>Sofa & Chair<br>Livingroom</h1>
+          <button class="btn btn-outline-dark mt-3 fw-bold">SHOP NOW</button>
+        </div>
+      </div>
+      <div class="carousel-item bg-cover"
+        style="background-image: url('images/slide2-demo3.png'); height: 600px; background-size:65% 100%; background-color: rgb(203, 191, 176); background-position: right center; background-repeat: no-repeat;">
+        <div class="carousel-caption text-start">
+          <p class="text-dark fw-bold fs-4">Made in Italy</p>
+          <h1 class="fw-bold text-dark display-4">Best Seller<br>Sofa & Chair<br>Livingroom</h1>
+          <button class="btn btn-outline-dark mt-3 fw-bold">SHOP NOW</button>
+        </div>
+      </div>
+      <div class="carousel-item bg-cover"
+        style="background-image: url('images/slide3-demo3.png'); height: 600px; background-size:65% 100%; background-color: rgb(203, 191, 176); background-position: right center; background-repeat: no-repeat;">
+        <div class="carousel-caption text-start">
+          <p class="text-dark fw-bold fs-4">Made in Italy</p>
+          <h1 class="fw-bold text-dark display-4">Best Seller<br>Sofa & Chair<br>Livingroom</h1>
+          <button class="btn btn-outline-dark mt-3 fw-bold">SHOP NOW</button>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev"> <span class="carousel-control-prev-icon"></span> </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next"> <span class="carousel-control-next-icon"></span> </button>
+  </div>
+
+  <!-- ==========================================
+    second page -->
+
+  <section class="container-fluid my-5">
+    <div class="d-flex justify-content-around">
+      <div class="d-flex">
+        <i class="fa-solid fa-car-side fa-3x b-hov me-2"></i>
+        <div>
+          <h4>Fast, Free Shipping</h4>
+          <p class="text-secondary">on order over $50</p>
+        </div>
+      </div>
+      <div class="d-flex">
+        <i class="fa-solid fa-clock-rotate-left fa-3x b-hov me-2"></i>
+        <div>
+          <h4>Next Day Delivery</h4>
+          <p class="text-secondary">fre spend over $99</p>
+        </div>
+      </div>
+      <div class="d-flex">
+        <i class="fa-solid fa-divide fa-3x b-hov me-2"></i>
+        <div>
+          <h4>Fast, Free Shipping</h4>
+          <p class="text-secondary">we offer competitive prices</p>
+        </div>
+      </div>
+      <div class="d-flex align-items-center">
+        <i class="fa-solid fa-thumbs-up fa-3x me-2 b-hov "></i>
+        <div>
+          <h4>Fast, Free Shipping</h4>
+          <p class="text-secondary">we Guarantee Our Products</p>
+        </div>
+      </div>
+    </div>
+    <div class="d-flex justify-content-between my-3 ms-5 align-items-center">
+      <h1>Don't miss this week's sales</h1>
+      <a href="#" class="text-dark">See All Products</a>
+    </div>
+
+  </section>
+  <section class="container-fluid row ms-5 my-5">
+    <div class="card ms-5 position-relative" style="width: 16rem;">
+      <div class="position-absolute bg-danger text-white my-2 p-2 rounded">-33%</div>
+      <img src="images/furniture-6-300x300.jpg" class="card-img-top" alt="...">
+      <div class="icons position-absolute top-0 end-0 d-flex flex-column m-2" style="gap: 10px;">
+        <a href="#" class="icon-box" data-label="Wishlist">
+          <i class="fa-regular fa-heart"></i>
+        </a>
+        <a href="#" class="icon-box" data-label="View">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </a>
+        <a href="#" class="icon-box" data-label="Add to Cart">
+          <i class="fa-solid fa-cart-shopping"></i>
+        </a>
+        <a href="#" class="icon-box" data-label="Compare">
+          <i class="fa-solid fa-code-compare"></i>
+        </a>
+      </div>
+      <div class="card-body">
+        <p class="card-title">14-inch Fasion Simplicity Quality Wall Clock, Home Decor</p>
+        <h5 class="card-text">$50 <del class="text-secondary">$75</del></h5>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star-half-stroke"></i>
+      </div>
+    </div>
+    <div class="card" style="width: 16rem;">
+      <div class="position-absolute bg-danger text-white my-2 p-2 rounded">-20%</div>
+      <img src="images/furniture-3-300x300.jpg" class="card-img-top" alt="...">
+      <div class="icons position-absolute top-0 end-0 d-flex flex-column m-2" style="gap: 10px;">
+        <a href="#" class="icon-box" data-label="Wishlist">
+          <i class="fa-regular fa-heart"></i>
+        </a>
+        <a href="#" class="icon-box" data-label="View">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </a>
+        <a href="#" class="icon-box" data-label="Add to Cart">
+          <i class="fa-solid fa-cart-shopping"></i>
+        </a>
+        <a href="#" class="icon-box" data-label="Compare">
+          <i class="fa-solid fa-code-compare"></i>
+        </a>
+      </div>
+      <div class="card-body">
+        <p class="card-title">Studio Designs Home, Heather Studio Designs Chair</p>
+        <h5 class="card-text">$50 <del class="text-secondary">$75</del></h5>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+      </div>
+    </div>
+    <div class="card" style="width: 16rem;">
+      <div class="position-absolute bg-danger text-white my-2 p-2 rounded">-48%</div>
+      <img src="images/furniture-5-300x300.jpg" class="card-img-top" alt="...">
+      <div class="icons position-absolute top-0 end-0 d-flex flex-column m-2" style="gap: 10px;">
+        <a href="#" class="icon-box" data-label="Wishlist">
+          <i class="fa-regular fa-heart"></i>
+        </a>
+        <a href="#" class="icon-box" data-label="View">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </a>
+        <a href="#" class="icon-box" data-label="Add to Cart">
+          <i class="fa-solid fa-cart-shopping"></i>
+        </a>
+        <a href="#" class="icon-box" data-label="Compare">
+          <i class="fa-solid fa-code-compare"></i>
+        </a>
+      </div>
+      <div class="card-body">
+        <p class="card-title">Mid Century Modern Round Dining Table in Oak</p>
+        <h5 class="card-text">$50 <del class="text-secondary">$75</del></h5>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+      </div>
+    </div>
+    <div class="card" style="width: 16rem;">
+      <div class="position-absolute bg-secondary text-white my-2 p-2 rounded">-Sold OUT</div>
+      <img src="images/196-300x300.jpg" class="card-img-top" alt="...">
+      <div class="icons position-absolute top-0 end-0 d-flex flex-column m-2" style="gap: 10px;">
+        <a href="#" class="icon-box" data-label="Wishlist">
+          <i class="fa-regular fa-heart"></i>
+        </a>
+        <a href="#" class="icon-box" data-label="View">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </a>
+        <a href="#" class="icon-box" data-label="Add to Cart">
+          <i class="fa-solid fa-cart-shopping"></i>
+        </a>
+        <a href="#" class="icon-box" data-label="Compare">
+          <i class="fa-solid fa-code-compare"></i>
+        </a>
+      </div>
+      <div class="card-body">
+        <p class="card-title">High seating comfort with built in armrest</p>
+        <h5 class="card-text">$50 <del class="text-secondary">$75</del></h5>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+      </div>
+    </div>
+    <div class="card position-relative overflow-hidden" style="width: 18rem;">
+      <div class="position-absolute bg-danger text-white m-2 px-2 py-1 rounded">-33%</div>
+      <img src="images/furniture-29-300x300.jpg" class="card-img-top" alt="...">
+      <div class="icons position-absolute top-0 end-0 d-flex flex-column m-2" style="gap: 10px;">
+        <a href="#" class="icon-box" data-label="Wishlist">
+          <i class="fa-regular fa-heart"></i>
+        </a>
+        <a href="#" class="icon-box" data-label="View">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </a>
+        <a href="#" class="icon-box" data-label="Add to Cart">
+          <i class="fa-solid fa-cart-shopping"></i>
+        </a>
+        <a href="#" class="icon-box" data-label="Compare">
+          <i class="fa-solid fa-code-compare"></i>
+        </a>
+      </div>
+      <div class="card-body">
+        <p class="card-title">Slate Table Lamp with Natural Slate Finish</p>
+        <h5 class="card-text">$50 <del class="text-secondary">$75</del></h5>
+        <i class="fa-regular fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ====================
+  third page -->
+
+  <section class="container-fluid my-5">
+    <div class="row g-0">
+      <div class="col-md-1"></div>
+      <div class="col-md-5 position-relative overflow-hidden">
+        <img src="images/banner1-demo3.jpg" alt="" class="img-fluid banner-img">
+        <div class="position-absolute start-0 top-0 m-4 text-start">
+          <p class="text-white fs-5">DESIGN BY COZY</p>
+          <h4 class="fw-bold text-white fs-1">Modern Mini Couch</h4>
+          <p class="text-white fs-5">51 Inches Loveseat Sofa</p>
+          <button class="btn btn-outline-light mt-3 fw-bold custom-btn">SHOP NOW</button>
+        </div>
+      </div>
+
+      <div class="col-md-5 d-flex flex-column">
+        <div class="position-relative overflow-hidden flex-fill">
+          <img src="images/banner2-demo3.jpg" alt="" class="img-fluid banner-img">
+          <div class="position-absolute start-0 top-0 m-4 text-start">
+            <p class="fs-5">DESIGN BY COZY</p>
+            <h4 class="fw-bold fs-1">Modern Mini Couch</h4>
+            <p class="fs-5">51 Inches Loveseat Sofa</p>
+            <button class="btn btn-outline-dark mt-3 fw-bold">SHOP NOW</button>
+          </div>
+        </div>
+
+        <div class="position-relative overflow-hidden flex-fill">
+          <img src="images/banner3-demo3.jpg" alt="" class="img-fluid banner-img">
+          <div class="position-absolute start-0 top-0 m-4 text-start">
+            <p class="text-white fs-5">DESIGN BY COZY</p>
+            <h4 class="fw-bold text-white fs-1">Modern Mini Couch</h4>
+            <p class="text-white fs-5">51 Inches Loveseat Sofa</p>
+            <button class="btn btn-outline-light mt-3 fw-bold custom-btn">SHOP NOW</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =================
+4th -->
+  <h1 class="text-center display-3 fw-bold">Cyber Weekend</h1>
+  <div class="container-sales my-5">
+    <h1 class="sales-text">Sales Off</h1>
+    <div class="content">
+      <div class="circle">
+        <p>+10% OFF</p>
+      </div>
+      <div class="circle">
+        <p>+15% OFF</p>
+      </div>
+      <div class="circle">
+        <p>+20% OFF</p>
+      </div>
+      <div class="circle">
+        <p>+25% OFF</p>
+      </div>
+      <div class="circle bg-danger text-white text-center">
+        <p>+30% OFF</p>
+      </div>
+    </div>
+  </div>
+
+  <h1 class="text-center display-3 fw-bold">New Arrivals</h1>
+  <section class="container-fluid row mt-5 justify-content-center ms-4">
+    <div class="card position-relative overflow-hidden" style="width: 16rem;">
+      <img src="images/furniture-8-300x300.jpg" class="card-img-top" alt="...">
+
+      <div class="icons position-absolute top-0 end-0 d-flex flex-column m-2" style="gap: 10px;">
+        <a href="#" class="icon-box" data-label="Wishlist">
+          <i class="fa-regular fa-heart"></i>
+        </a>
+        <a href="#" class="icon-box" data-label="View">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </a>
+        <a href="#" class="icon-box" data-label="Add to Cart">
+          <i class="fa-solid fa-cart-shopping"></i>
+        </a>
+        <a href="#" class="icon-box" data-label="Compare">
+          <i class="fa-solid fa-code-compare"></i>
+        </a>
+      </div>
+
+      <div class="card-body">
+        <p class="card-title">Mid Century Modern Round Dining Table in Oak</p>
+        <h5 class="card-text">$50</h5>
+      </div>
+    </div>
+
+    <div class="card" style="width: 16rem;">
+      <img src="images/furniture-7-300x300.jpg" class="card-img-top" alt="...">
+      <div class="icons position-absolute top-0 end-0 d-flex flex-column m-2" style="gap: 10px;">
+        <a href="#" class="icon-box" data-label="Wishlist">
+          <i class="fa-regular fa-heart"></i>
+        </a>
+        <a href="#" class="icon-box" data-label="View">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </a>
+        <a href="#" class="icon-box" data-label="Add to Cart">
+          <i class="fa-solid fa-cart-shopping"></i>
+        </a>
+        <a href="#" class="icon-box" data-label="Compare">
+          <i class="fa-solid fa-code-compare"></i>
+        </a>
+      </div>
+      <div class="card-body">
+        <p class="card-title">Mid Century Modern Round Dining Table in Oak</p>
+        <h5 class="card-text">$50</h5>
+      </div>
+    </div>
+    <div class="card" style="width: 16rem;">
+      <img src="images/furniture-5-300x300.jpg" class="card-img-top" alt="...">
+      <div class="icons position-absolute top-0 end-0 d-flex flex-column m-2" style="gap: 10px;">
+        <a href="#" class="icon-box" data-label="Wishlist">
+          <i class="fa-regular fa-heart"></i>
+        </a>
+        <a href="#" class="icon-box" data-label="View">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </a>
+        <a href="#" class="icon-box" data-label="Add to Cart">
+          <i class="fa-solid fa-cart-shopping"></i>
+        </a>
+        <a href="#" class="icon-box" data-label="Compare">
+          <i class="fa-solid fa-code-compare"></i>
+        </a>
+      </div>
+      <div class="card-body">
+        <p class="card-title">Mid Century Modern Round Dining Table in Oak</p>
+        <h5 class="card-text">$50</h5>
+      </div>
+    </div>
+    <div class="card" style="width: 16rem;">
+      <div class="position-absolute bg-danger text-white m-2 px-2 py-1 rounded">-33%</div>
+      <img src="images/furniture-10-300x300.jpg" class="card-img-top" alt="...">
+      <div class="icons position-absolute top-0 end-0 d-flex flex-column m-2" style="gap: 10px;">
+        <a href="#" class="icon-box" data-label="Wishlist">
+          <i class="fa-regular fa-heart"></i>
+        </a>
+        <a href="#" class="icon-box" data-label="View">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </a>
+        <a href="#" class="icon-box" data-label="Add to Cart">
+          <i class="fa-solid fa-cart-shopping"></i>
+        </a>
+        <a href="#" class="icon-box" data-label="Compare">
+          <i class="fa-solid fa-code-compare"></i>
+        </a>
+      </div>
+      <div class="card-body">
+        <p class="card-title">Mid Century Modern Round Dining Table in Oak</p>
+        <h5 class="card-text">$50 <del class="text-secondary">$75</del></h5>
+      </div>
+    </div>
+    <div class="card position-relative overflow-hidden" style="width: 16rem;">
+      <img src="images/furniture-17-300x300.jpg" class="card-img-top" alt="...">
+      <div class="icons position-absolute top-0 end-0 d-flex flex-column m-2" style="gap: 10px;">
+        <a href="#" class="icon-box" data-label="Wishlist">
+          <i class="fa-regular fa-heart"></i>
+        </a>
+        <a href="#" class="icon-box" data-label="View">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </a>
+        <a href="#" class="icon-box" data-label="Add to Cart">
+          <i class="fa-solid fa-cart-shopping"></i>
+        </a>
+        <a href="#" class="icon-box" data-label="Compare">
+          <i class="fa-solid fa-code-compare"></i>
+        </a>
+      </div>
+      <div class="card-body">
+        <p class="card-title">Mid Century Modern Round Dining Table in Oak</p>
+        <h5 class="card-text">$50</h5>
+      </div>
+    </div>
+  </section>
+  <section class="container-fluid row justify-content-center ms-4 mb-5">
+    <div class="card position-relative overflow-hidden" style="width: 16rem;">
+      <img src="images/furniture-16-300x300.jpg" class="card-img-top" alt="...">
+      <div class="icons position-absolute top-0 end-0 d-flex flex-column m-2" style="gap: 10px;">
+        <a href="#" class="icon-box" data-label="Wishlist">
+          <i class="fa-regular fa-heart"></i>
+        </a>
+        <a href="#" class="icon-box" data-label="View">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </a>
+        <a href="#" class="icon-box" data-label="Add to Cart">
+          <i class="fa-solid fa-cart-shopping"></i>
+        </a>
+        <a href="#" class="icon-box" data-label="Compare">
+          <i class="fa-solid fa-code-compare"></i>
+        </a>
+      </div>
+      <div class="card-body">
+        <p class="card-title">Mid Century Modern Round Dining Table in Oak</p>
+        <h5 class="card-text">$50</h5>
+      </div>
+    </div>
+    <div class="card position-relative overflow-hidden" style="width: 16rem;">
+      <img src="images/furniture-6-300x300.jpg" class="card-img-top" alt="...">
+      <div class="icons position-absolute top-0 end-0 d-flex flex-column m-2" style="gap: 10px;">
+        <a href="#" class="icon-box" data-label="Wishlist">
+          <i class="fa-regular fa-heart"></i>
+        </a>
+        <a href="#" class="icon-box" data-label="View">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </a>
+        <a href="#" class="icon-box" data-label="Add to Cart">
+          <i class="fa-solid fa-cart-shopping"></i>
+        </a>
+        <a href="#" class="icon-box" data-label="Compare">
+          <i class="fa-solid fa-code-compare"></i>
+        </a>
+      </div>
+      <div class="card-body">
+        <p class="card-title">Mid Century Modern Round Dining Table in Oak</p>
+        <h5 class="card-text">$50</h5>
+      </div>
+    </div>
+    <div class="card position-relative overflow-hidden" style="width: 16rem;">
+      <div class="position-absolute bg-danger text-white m-2 px-2 py-1 rounded">-20%</div>
+      <img src="images/furniture-15-300x300.jpg" class="card-img-top" alt="...">
+      <div class="icons position-absolute top-0 end-0 d-flex flex-column m-2" style="gap: 10px;">
+        <a href="#" class="icon-box" data-label="Wishlist">
+          <i class="fa-regular fa-heart"></i>
+        </a>
+        <a href="#" class="icon-box" data-label="View">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </a>
+        <a href="#" class="icon-box" data-label="Add to Cart">
+          <i class="fa-solid fa-cart-shopping"></i>
+        </a>
+        <a href="#" class="icon-box" data-label="Compare">
+          <i class="fa-solid fa-code-compare"></i>
+        </a>
+      </div>
+      <div class="card-body">
+        <p class="card-title">Mid Century Modern Round Dining Table in Oak</p>
+        <h5 class="card-text">$50 <del class="text-secondary">$75</del></h5>
+      </div>
+    </div>
+    <div class="card position-relative overflow-hidden" style="width: 16rem;">
+      <img src="images/furniture-29-300x300.jpg" class="card-img-top" alt="...">
+      <div class="icons position-absolute top-0 end-0 d-flex flex-column m-2" style="gap: 10px;">
+        <a href="#" class="icon-box" data-label="Wishlist">
+          <i class="fa-regular fa-heart"></i>
+        </a>
+        <a href="#" class="icon-box" data-label="View">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </a>
+        <a href="#" class="icon-box" data-label="Add to Cart">
+          <i class="fa-solid fa-cart-shopping"></i>
+        </a>
+        <a href="#" class="icon-box" data-label="Compare">
+          <i class="fa-solid fa-code-compare"></i>
+        </a>
+      </div>
+      <div class="card-body">
+        <p class="card-title">Mid Century Modern Round Dining Table in Oak</p>
+        <h5 class="card-text">$50</h5>
+      </div>
+    </div>
+    <div class="card position-relative overflow-hidden" style="width: 16rem;">
+      <div class="position-absolute bg-danger text-white m-2 px-2 py-1 rounded">-33%</div>
+      <img src="images/furniture-3-300x300.jpg" class="card-img-top" alt="...">
+      <div class="icons position-absolute top-0 end-0 d-flex flex-column m-2" style="gap: 10px;">
+        <a href="#" class="icon-box" data-label="Wishlist">
+          <i class="fa-regular fa-heart"></i>
+        </a>
+        <a href="#" class="icon-box" data-label="View">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </a>
+        <a href="#" class="icon-box" data-label="Add to Cart">
+          <i class="fa-solid fa-cart-shopping"></i>
+        </a>
+        <a href="#" class="icon-box" data-label="Compare">
+          <i class="fa-solid fa-code-compare"></i>
+        </a>
+      </div>
+      <div class="card-body">
+        <p class="card-title">Mid Century Modern Round Dining Table in Oak</p>
+        <h5 class="card-text">$50</h5>
+      </div>
+    </div>
+    <a href="#" class="text-dark text-center my-5">see All Products</a>
+  </section>
+
+  <div class="container-fluid my-5">
+    <div class="mx-5 info d-flex justify-content-between">
+      <div class="d-flex ms-4">
+        <div>
+          <h1>Earn Cash Back For The Things</h1>
+          <h1> You Buy Every Where</h1>
+          <p>Application via Merto. Terms & Conditions.</p>
+        </div>
+        <div>
+          <button class="btn btn-success custom2-btn mt-3 fw-bold ms-5 w-100">View More</button>
+        </div>
+      </div>
+      <img src="images/payments-2-1.png" alt="">
+    </div>
+  </div>
+
+  <!-- ================================
+    5th -->
+
+  <h1 class="text-center display-3 fw-bold">Shop by Department</h1>
+  <div class="container-fluid my-5">
+    <div class="row text-center g-4">
+
+      <div class="col-6 col-md-3">
+        <div class="circle-img mx-auto">
+          <img src="images/image-box-1.jpg" alt="img1" class="img-fluid">
+        </div>
+        <h4 class="mt-3">Headboard Sale Off</h4>
+        <a href="#" class="custom-link">
+          Shop Now <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+
+      <div class="col-6 col-md-3">
+        <div class="circle-img mx-auto">
+          <img src="images/image-box-2.jpg" alt="img2" class="img-fluid">
+        </div>
+        <h4 class="mt-3">Coffee Table from $20</h4>
+        <a href="#" class="custom-link">
+          Shop Now <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+
+      <div class="col-6 col-md-3">
+        <div class="circle-img mx-auto">
+          <img src="images/image-box-3.jpg" alt="img3" class="img-fluid">
+        </div>
+        <h4 class="mt-3">Flower Vase from $5</h4>
+        <a href="#" class="custom-link">
+          Shop Now <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+
+      <div class="col-6 col-md-3">
+        <div class="circle-img mx-auto">
+          <img src="images/image-box-4.jpg" alt="img4" class="img-fluid">
+        </div>
+        <h4 class="mt-3">Sectionals from $300</h4>
+        <a href="#" class="custom-link">
+          Shop Now <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+
+    </div>
+  </div>
+  <h1 class="border-bottom my-5"></h1>
+
+  <div class="container-fluid d-flex justify-content-around mb-5">
+    <div>
+      <img src="images/furniture-brand-1.jpg" alt="">
+    </div>
+    <div>
+      <img src="images/furniture-brand-2-200x80.jpg" alt="">
+    </div>
+    <div>
+      <img src="images/furniture-brand-4.jpg" alt="">
+    </div>
+    <div>
+      <img src="images/furniture-brand-5.jpg" alt="">
+    </div>
+    <div>
+      <img src="images/furniture-brand-6.jpg" alt="">
+    </div>
+    <div>
+      <img src="images/furniture-brand-3.jpg" alt="">
+    </div>
+
+  </div>
+
+
+  <!-- =========================
+ 6th -->
+
+  <section class="container-fluid contain p-1">
+    <div class="newsletter">
+      <h2 class="fw-bold">Join our newsletter</h2>
+      <p>Get recommendations, tips, updates, promotions and more.</p>
+
+      <div class="input-wrapper">
+        <input type="email" class="form-control" placeholder="enter your email address">
+        <button class="arrow-btn" type="button">
+          &rarr;
+        </button>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container-fluid mx-auto">
+        <div class="row align-items-center">
+
+          <div class="col-md-2">
+            <a class="navbar-brand" href="#"><img src="images/logo-furniture.png" alt="user icon"
+                class="w-75"></span></a>
+            <p class="mt-3">
+              <i class="bi bi-geo-alt"></i> 29 SE 2nd Ave, Miami<br>
+              Florida 33131, United States
+            </p>
+            <p><i class="bi bi-envelope"></i> info@example.com</p>
+            <p class="fw-bold">(+92) 3942 7879</p>
+          </div>
+
+          <div class="col-md-2">
+            <h3>SHOP MORE</h3>
+            <a href="#">New Arrival</a>
+            <a href="#">Sale off</a>
+            <a href="#">Living Room</a>
+            <a href="#">Bedroom</a>
+            <a href="#">Dinner Room</a>
+          </div>
+          <div class="col-md-2 my-5">
+            <br><br>
+            <a href="#">Bathroom</a>
+            <a href="#">Kitchen Room</a>
+            <a href="#">Home Office</a>
+            <a href="#">Home Decoration</a>
+            <a href="#">Outdoor</a>
+          </div>
+
+          <div class="col-md-2">
+            <h3>SHOPPING</h3>
+            <a href="#">Wishlist</a>
+            <a href="#">Shop by Brand</a>
+            <a href="#">Offers</a>
+            <a href="#">Track order</a>
+            <a href="#">Size Guide</a>
+          </div>
+
+          <div class="col-md-2">
+            <h3>INFOMATION</h3>
+            <a href="#">Track Order</a>
+            <a href="#">Shipping & Returns</a>
+            <a href="#">About us</a>
+            <a href="#">Help</a>
+            <a href="#">Gift Cards</a>
+          </div>
+
+          <div class="col-md-2">
+            <h3>ACCOUNT</h3>
+            <a href="#">Cart</a>
+            <a href="#">My account</a>
+            <a href="#">My orders</a>
+            <a href="#">Wishlist</a>
+            <a href="#">Affiliate Program</a>
+          </div>
+
+        </div>
+
+        <div class="row mt-5 align-items-center footer-bottom">
+          <div class="col-md-5">
+            <p class="mb-0">Copyright © Merto. All Rights Reserved</p>
+          </div>
+
+          <div class="col-md-4 text-center social-icons d-flex">
+            <a href="#"><i class="fa-brands fa-facebook-f text-secondary me-2"></i></a>
+            <a href="#"><i class="fa-brands fa-tiktok text-secondary me-2"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter text-secondary me-2"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube text-secondary me-2"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram text-secondary me-2"></i></a>
+          </div>
+
+          <div class="col-md-3 text-end payment-icons">
+            <img src="images/payment-icons-2.png" height="24" />
+          </div>
+        </div>
+
+        <button id="scrollTopBtn" class="btn btn-dark position-fixed"
+          style="bottom: 20px; right: 20px; display: none; z-index: 9999;">
+          <i class="fa-solid fa-arrow-up"></i>
+        </button>
+
+      </div>
+
+    </footer>
+
+  </section>
+
+
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
